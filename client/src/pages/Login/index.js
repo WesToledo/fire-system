@@ -26,28 +26,30 @@ function LoginPage(props) {
         password: "",
       }}
       onSubmit={async (values, { setValues, setErrors }) => {
-        const { login, password } = values;
-        setTextButton({ text: "Carregando..." });
+        // const { login, password } = values;
+        // setTextButton({ text: "Carregando..." });
 
-        try {
-          const response = await api.post("/login", {
-            login,
-            password,
-          });
-          const { token, user } = response.data;
-          setLoginCache(token, user._id, user.name, user.type);
-          switch (user.type) {
-            case "Admin":
-              props.history.push("/home");
-              break;
-            case "DeliverMan":
-              props.history.push("/entregador");
-              break;
-          }
-        } catch (err) {
-          setTextButton({ text: "Entrar" });
-          setErrors({ email: "Erro ao tentar logar" });
-        }
+        // try {
+        //   const response = await api.post("/login", {
+        //     login,
+        //     password,
+        //   });
+        //   const { token, user } = response.data;
+        //   setLoginCache(token, user._id, user.name, user.type);
+        //   switch (user.type) {
+        //     case "Admin":
+        //       props.history.push("/home");
+        //       break;
+        //     case "DeliverMan":
+        //       props.history.push("/entregador");
+        //       break;
+        //   }
+        // } catch (err) {
+        //   setTextButton({ text: "Entrar" });
+        //   setErrors({ email: "Erro ao tentar logar" });
+        // }
+
+        props.history.push("/home");
       }}
       render={({
         values,

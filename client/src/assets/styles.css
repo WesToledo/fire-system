@@ -493,17 +493,17 @@
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #009718;
-  border-color: #009718;
+  background-color: #B7186C;
+  border-color: #B7186C;
 }
 a {
   color: #FF3075;
 }
 
 a:hover {
-  color: #009718;
+  color: #B7186C;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #009718;
+  background-color: #B7186C;
 }

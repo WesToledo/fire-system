@@ -8,39 +8,24 @@ import { getUserInfo } from "~/services/auth";
 
 const navBarItems = [
   {
-    value: "Usuarios",
+    value: "Recomendações de Diretrizes",
     icon: "user",
-    to: "/usuarios",
+    to: "/diretrizes",
   },
   {
-    value: "Volumes",
+    value: "Legislação e Normas Técnicas",
     icon: "box",
-    to: "/volumes",
+    to: "/legislacao",
   },
   {
-    value: "Clientes",
+    value: "Dicas de Segurança",
     icon: "user",
-    to: "/clientes",
+    to: "/dicas",
   },
   {
-    value: "Destinatários",
+    value: "Fale conosco",
     icon: "home",
-    to: "/destinatarios",
-  },
-  {
-    value: "Entregas",
-    icon: "truck",
-    to: "/entregas",
-  },
-  {
-    value: "Financeiro Clientes",
-    icon: "dollar-sign",
-    to: "/financeiro",
-  },
-  {
-    value: "Financeiro Empresa",
-    icon: "dollar-sign",
-    to: "/financeiro-empresa",
+    to: "/fale-conosco",
   },
 ];
 
@@ -49,7 +34,7 @@ const userInfo = getUserInfo();
 const accountDropdownProps = {
   avatarURL: avatar,
   name: userInfo.name,
-  description: userInfo.type === "Admin" ? "Administrador" : "Entregador",
+  description: userInfo.type === "Admin" ? "Administrador" : "Usuário",
   options: [
     { icon: "user", value: "Perfil" },
     { isDivider: true },
@@ -104,7 +89,7 @@ class SiteWrapper extends React.Component {
       <Site.Wrapper
         headerProps={{
           href: "/home",
-          alt: "Nome empresa",
+          alt: "Fire System",
           imageURL: "/assets/fire.png",
           // notificationsTray: {
           //   notificationsObjects,
@@ -150,7 +135,7 @@ class SiteWrapper extends React.Component {
           copyright: (
             <React.Fragment>
               <div style={{ textAlign: "center" }}>
-                Copyright © 2020 -<a href="."> Expression System</a>
+                Copyright © 2021 -<a href="."> Fire System</a>
                 {" - "}
                 Todos os Direitos Reservados.
               </div>
