@@ -5,14 +5,7 @@ const path = require("path");
 
 const {
   rootRouter,
-  userRouter,
-  clientRouter,
-  receiverRouter,
-  packageRouter,
-  transactionRouter,
-  cargoRouter,
-  financialRouter,
-  businessRouter
+  userRouter, classificatorRouter
 } = require("./routes");
 
 const app = express();
@@ -24,13 +17,7 @@ app.use(cors());
 // Routers
 app.use("/api", rootRouter);
 app.use("/api/user", userRouter);
-app.use("/api/client", clientRouter);
-app.use("/api/receiver", receiverRouter);
-app.use("/api/package", packageRouter);
-app.use("/api/transaction", transactionRouter);
-app.use("/api/cargo", cargoRouter);
-app.use("/api/financial", financialRouter);
-app.use("/api/business", businessRouter);
+app.use("/api/classificator", classificatorRouter);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

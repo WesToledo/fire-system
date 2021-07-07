@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  login: {
+  email: {
     type: String,
     required: true,
     unique: true,
@@ -15,11 +15,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
     select: false,
-  },
-  type: {
-    type: String,
-    required: true,
-    default: "DeliverMan",
   },
 });
 

@@ -105,7 +105,7 @@
 
 /*-- Region --*/
 .c3-region {
-  fill: #FF3075;
+  fill: #ff3075;
   fill-opacity: 0.1;
 }
 
@@ -247,7 +247,7 @@
 
 /* Top of Card CRUD */
 .card-header-form .card-header {
-  background-color: #FF3075 !important;
+  background-color: #ff3075 !important;
 }
 .card-header-form .card-title {
   color: white;
@@ -271,11 +271,11 @@
 }
 
 .MUIDataTableToolbar-iconActive-49 {
-  color: #FF3075 !important;
+  color: #ff3075 !important;
 }
 
 .MUIDataTableToolbar-icon-48:hover {
-  color: #FF3075 !important;
+  color: #ff3075 !important;
 }
 
 /**
@@ -388,7 +388,7 @@
 }
 
 .select-search__option.is-selected {
-  background: #FF3075;
+  background: #ff3075;
   color: #fff;
 }
 
@@ -399,7 +399,7 @@
 
 .select-search__option.is-highlighted.is-selected,
 .select-search__option.is-selected:hover {
-  background: #FF3075;
+  background: #ff3075;
   color: #fff;
 }
 
@@ -458,7 +458,7 @@
 }
 
 .select-search:not(.select-search--multiple) .select-search__input:hover {
-  border-color: #FF3075;
+  border-color: #ff3075;
 }
 
 .select-search:not(.select-search--multiple) .select-search__select {
@@ -481,29 +481,45 @@
 }
 
 .nav-link.active {
-  border-color: #FF3075 !important;
-  color: #FF3075 !important;
+  border-color: #ff3075 !important;
+  color: #ff3075 !important;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #FF3075;
-  border-color: #FF3075;
+  background-color: #ff3075;
+  border-color: #ff3075;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #B7186C;
-  border-color: #B7186C;
+  background-color: #b7186c;
+  border-color: #b7186c;
 }
 a {
-  color: #FF3075;
+  color: #ff3075;
 }
 
 a:hover {
-  color: #B7186C;
+  color: #b7186c;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #B7186C;
+  background-color: #b7186c;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #b7186c;
+  border-color: #b7186c;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-align-center{
+  text-align: center;
 }

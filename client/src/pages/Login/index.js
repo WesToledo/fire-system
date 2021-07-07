@@ -22,34 +22,30 @@ function LoginPage(props) {
   return (
     <Formik
       initialValues={{
-        login: "",
+        email: "",
         password: "",
       }}
       onSubmit={async (values, { setValues, setErrors }) => {
-        // const { login, password } = values;
+        // const { email, password } = values;
         // setTextButton({ text: "Carregando..." });
 
         // try {
         //   const response = await api.post("/login", {
-        //     login,
+        //     email,
         //     password,
         //   });
         //   const { token, user } = response.data;
-        //   setLoginCache(token, user._id, user.name, user.type);
-        //   switch (user.type) {
-        //     case "Admin":
-        //       props.history.push("/home");
-        //       break;
-        //     case "DeliverMan":
-        //       props.history.push("/entregador");
-        //       break;
-        //   }
+        //   setLoginCache(token, user._id, user.name);
+        //   props.history.push("/home");
+
         // } catch (err) {
         //   setTextButton({ text: "Entrar" });
         //   setErrors({ email: "Erro ao tentar logar" });
         // }
 
+
         props.history.push("/home");
+
       }}
       render={({
         values,
@@ -66,7 +62,7 @@ function LoginPage(props) {
             onSubmit={handleSubmit}
           >
             <FormTextInput
-              name="login"
+              name="email"
               label={stringsForm.emailLabel}
               placeholder={stringsForm.emailPlaceholder}
               onChange={handleChange}
