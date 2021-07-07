@@ -34,7 +34,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={LoginPage} />
 
-        <PrivateRoute exact path="/home" component={HomePage} />
+        <Route exact path="/home" component={HomePage} />
 
         <Route component={Error404} />
       </Switch>
