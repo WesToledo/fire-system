@@ -20,7 +20,7 @@ const navBarItems = [
   {
     value: "Dicas de Segurança",
     icon: "user",
-    to: "/dicas",
+    to: "/seguranca",
   },
   {
     value: "Fale conosco",

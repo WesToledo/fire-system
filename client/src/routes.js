@@ -14,6 +14,9 @@ import Error404 from "./pages/NotFound/404.react";
 import LoginPage from "~/pages/Login";
 
 import HomePage from "~/pages/Home";
+import LegislationPage from "~/pages/Legislation";
+import SecurityTips from "./pages/SecurityTips";
+import TalkWithUs from "./pages/TalkWithUs";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -35,6 +38,9 @@ function App() {
         <Route exact path="/" component={LoginPage} />
 
         <Route exact path="/home" component={HomePage} />
+        <Route exact path="/legislacao" component={LegislationPage} />
+        <Route exact path="/seguranca" component={SecurityTips} />
+        <Route exact path="/fale-conosco" component={TalkWithUs} />
 
         <Route component={Error404} />
       </Switch>
